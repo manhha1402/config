@@ -92,7 +92,10 @@
         "__split_buffer": "cpp",
         "queue": "cpp",
         "__hash_table": "cpp",
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "geometry": "cpp",
+        "svd": "cpp",
+        "dense": "cpp"
     },
     "C_Cpp.clang_format_style": "file",
     "editor.formatOnSave": true,
@@ -100,10 +103,10 @@
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "cmake.generator": "Unix Makefiles",
     "python.analysis.extraPaths": [
-        "/opt/ros/foxy/lib/python3.8/site-packages/"
+        "/opt/ros/noetic/lib/python3.8/site-packages/"
     ],
     "python.autoComplete.extraPaths": [
-        "/opt/ros/foxy/lib/python3.8/site-packages/"
+        "/opt/ros/noetic/lib/python3.8/site-packages/"
     ],
     "python.formatting.blackPath": "${env:HOME}/.local/bin/black",
     "python.formatting.blackArgs": [
@@ -113,7 +116,6 @@
     "[python]": {
         "editor.formatOnSave": true
     },
-    "ros.distro": "foxy",
     "editor.tabSize": 8,
     "editor.rulers": [
         100

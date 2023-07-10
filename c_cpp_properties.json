@@ -7,8 +7,7 @@
                 "limitSymbolsToIncludedHeaders": true
             },
             "includePath": [
-                "${workspaceFolder}/../../install/**",
-                "/opt/ros/foxy/include/**",
+                "/opt/ros/noetic/include/**",
                 "/usr/include/**",
                 "/usr/local/include/**",
                 "${workspaceFolder}/**"
@@ -17,7 +16,8 @@
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "configurationProvider": "ms-vscode.cmake-tools"
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "compileCommands": "${workspaceFolder}/compile_commands.json"
         }
     ],
     "version": 4
