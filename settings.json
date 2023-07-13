@@ -95,17 +95,19 @@
         "*.inc": "cpp",
         "geometry": "cpp",
         "svd": "cpp",
-        "dense": "cpp"
+        "dense": "cpp",
+        "scoped_allocator": "cpp"
     },
     "C_Cpp.clang_format_style": "file",
-    "editor.formatOnSave": true,
     "clang-format.executable": "${workspaceFolder}/.clang-format",
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+    },
     "cmake.generator": "Unix Makefiles",
+    "python.defaultInterpreterPath": "${env:HOME}/neura/perception_ws/venv/bin/python3",
     "python.analysis.extraPaths": [
-        "/opt/ros/noetic/lib/python3.8/site-packages/"
-    ],
-    "python.autoComplete.extraPaths": [
         "/opt/ros/noetic/lib/python3.8/site-packages/"
     ],
     "python.formatting.blackPath": "${env:HOME}/.local/bin/black",
@@ -114,10 +116,12 @@
         "100"
     ],
     "[python]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.autopep8"
     },
     "editor.tabSize": 8,
     "editor.rulers": [
         100
-    ]
+    ],
+    "python.formatting.provider": "none"
 }
